@@ -137,9 +137,9 @@ class box
 
         $middle_projection = $this->projections(...$projections);
 
-        $NC = $this->compute($middle_projection['c']);
-        $NCS = $this->compute($middle_projection['cs']);
-        $NS = $this->compute($middle_projection['s']);
+        $NC = $this->define($middle_projection['c']);
+        $NCS = $this->define($middle_projection['cs']);
+        $NS = $this->define($middle_projection['s']);
 
         $this->boxOutput('main_cube', $NC[0]);
         $this->boxOutput('main_cube', $NS[0]);
@@ -205,9 +205,9 @@ class box
         $this->boxOutput('main_cube', [$projections['c'], $projections['cs']], '', 'line', $line_color);
         $this->boxOutput('main_cube', [$projections['s'], $projections['cs']], '', 'line', $line_color);
 
-        $this->compute($projections['c']);
-        $this->compute($projections['s']);
-        $this->compute($projections['cs']);
+        $this->define($projections['c']);
+        $this->define($projections['s']);
+        $this->define($projections['cs']);
 
         return [
             'c' => $projections['c'],
@@ -487,7 +487,7 @@ class box
     }
 
 
-    public function compute(...$colors)
+    public function define(...$colors)
     {
         $new_positions = [];
 

@@ -565,9 +565,9 @@ class box
     {
         foreach ($this->box['main_cube'] as $var) {
             if (isset($var['type']) && $var['type'] == 'line' && isset($var['position'][0][0])) {
-                echo "addBigLine('test', " . $var['position'][0][0] . ", " . $var['position'][0][1] . ", " . $var['position'][0][2] . ", " . $var['position'][1][0] . ", " . $var['position'][1][1] . ", " . $var['position'][1][2] . ");<br />";
+                echo "addBigLine('cube', " . $var['position'][0][0] . ", " . $var['position'][0][1] . ", " . $var['position'][0][2] . ", " . $var['position'][1][0] . ", " . $var['position'][1][1] . ", " . $var['position'][1][2] . ");<br />";
             } else {
-                echo "addBigSphere('test', " . $var['position'][0] . ", " . $var['position'][1] . ", " . $var['position'][2] . ");<br />";
+                echo "addBigSphere('cube', " . $var['position'][0] . ", " . $var['position'][1] . ", " . $var['position'][2] . ");<br />";
             }
         }
 

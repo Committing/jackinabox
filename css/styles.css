@@ -1,0 +1,42 @@
+
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+
+#cube {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.ui {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 300px;
+}
+
+.ui button {
+    display: inline-block;
+    /*float: right;*/
+    cursor: pointer;
+    background-color: grey;
+    border: none;
+}
+
+
+.tiny_title {
+    font-size: 12px;
+    color: white;
+}
+
+
+.noclick {
+    pointer-events: none;
+    opacity: 0.5;
+}
